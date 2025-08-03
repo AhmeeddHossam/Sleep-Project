@@ -11,7 +11,7 @@ df["Sleep Disorder"] = df["Sleep Disorder"].fillna("Normal")
 # print(df.head())
 
 st.sidebar.header("Sleep Dashboard")
-st.sidebar.image("istockphoto-494534446-612x612.jpg")
+st.sidebar.image("istockphoto-494534446-612x612.JPG")
 st.sidebar.write("The purpose of dashboard is to show the reasones of sleep disorder")
 
 cat_filter = st.sidebar.selectbox(
@@ -60,4 +60,5 @@ df_selected = df[selected_cols]
 fig_heat, ax = plt.subplots(figsize=(10, 6))
 sns.heatmap(df_selected.corr(),annot=True,cmap="coolwarm",fmt=".2f",ax=ax,)
 ax.set_xticklabels(ax.get_xticklabels(), rotation=45, ha="right")
+
 st.pyplot(fig_heat)
