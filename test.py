@@ -11,7 +11,7 @@ df["Sleep Disorder"] = df["Sleep Disorder"].fillna("Normal")
 # print(df.head())
 
 st.sidebar.header("Sleep Dashboard")
-st.sidebar.image("istockphoto-494534446-612x612.JPG")
+st.sidebar.image("istockphoto-494534446-612x612.jpg")
 st.sidebar.write("The purpose of dashboard is to show the reasones of sleep disorder")
 
 cat_filter = st.sidebar.selectbox(
