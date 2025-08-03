@@ -5,7 +5,7 @@ import streamlit as st
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-df = pd.read_csv("C:\\Users\\ADMIN-FUE\\Desktop\\Sleep\\sleep.csv")
+df = pd.read_csv("sleep.csv")
 # print(df.head())
 
 df["Sleep Disorder"] = df["Sleep Disorder"].fillna("Normal")
@@ -95,3 +95,4 @@ sns.heatmap(
 )
 ax.set_xticklabels(ax.get_xticklabels(), rotation=45, ha="right")
 st.pyplot(fig_heat)
+
